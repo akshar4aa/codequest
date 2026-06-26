@@ -1,58 +1,59 @@
-import { ChevronRight, Sparkles } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 function HeroContent() {
   return (
     <div className="w-full lg:w-[48%] text-white">
 
-      {/* Badge */}
-      <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-300 backdrop-blur-md">
+      {/* Big Tag */}
+      <div className="inline-flex items-center rounded-full border border-violet-500/30 bg-violet-500/10 px-5 py-2 mb-10">
+  <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">
+    YOUR ADVENTURE STARTS HERE
+  </p>
+</div>
 
-        <Sparkles size={16} />
+      {/* Main Heading */}
+      <h1 className="text-5xl  sm:text-6xl font-black leading-[0.95] tracking-tight">
 
-        YOUR ADVENTURE STARTS HERE
+        Become the
 
-      </div>
+        <br />
 
-      {/* Heading */}
+        <span className="bg-linear-to-r from-cyan-400 via-violet-400 to-pink-400 bg-clip-text text-transparent">
+          Hero
+        </span>
 
-      <h1 className="mt-10 text-5xl lg:text-7xl font-black leading-[1.15] tracking-tight">
+        {" "}of Your
 
-       Become the <br />
+        <br />
 
-<span className="bg-gradient-to-r from-cyan-400 via-violet-400 to-pink-400 bg-clip-text text-transparent">
-  Hero
-</span>{" "}
-of Your <br />
-
-Coding Adventure
+        Coding Adventure
 
       </h1>
 
-      {/* Description */}
-<p className="mt-10 max-w-lg text-lg leading-9 text-slate-400">
+      {/* Subtitle */}
+      <p className="mt-10 max-w-lg text-lg leading-8 text-gray-400">
 
         Learn programming through immersive quests, exciting boss battles,
-        achievements, and AI-powered guidance. Every lesson earns XP and
-        brings you one step closer to your dream career.
+        achievements and AI-powered guidance.
+
+        <br />
+
+        Level up with every lesson and unlock your dream career.
 
       </p>
 
       {/* Buttons */}
+      <div className="mt-14 flex items-center gap-8">
 
-      <div className="mt-12 flex gap-5">
-
-        <button className="group rounded-2xl bg-gradient-to-r from-violet-600 to-cyan-500 px-8 py-4 font-semibold shadow-xl transition hover:scale-105">
+        <button className="rounded-2xl bg-gradient-to-r from-violet-600 via-fuchsia-500 to-cyan-500 px-12 py-5 text-lg font-semibold shadow-[0_20px_60px_rgba(124,58,237,0.35)] transition-all duration-300 hover:-translate-y-1 hover:scale-105">
 
           Start Quest
 
-          <ChevronRight
-            size={20}
-            className="ml-2 inline transition group-hover:translate-x-1"
-          />
+          <ChevronRight className="ml-3 inline" size={22} />
 
         </button>
 
-        <button className="rounded-2xl border border-white/10 bg-white/5 px-8 py-4 font-semibold backdrop-blur-xl transition hover:border-violet-500">
+        <button className="rounded-2xl border border-white/20 bg-white/5 px-12 py-5 text-lg font-semibold backdrop-blur-xl transition-all duration-300 hover:border-violet-500 hover:bg-white/10">
 
           Explore Roadmap
 
@@ -61,22 +62,33 @@ Coding Adventure
       </div>
 
       {/* Stats */}
-
-      <div className="mt-20 flex gap-12">
+      <div className="mt-20 flex gap-20">
 
         <div>
-          <h2 className="text-3xl font-bold text-cyan-400">50K+</h2>
-          <p className="text-slate-400">Students</p>
+          <h2 className="text-5xl font-black text-cyan-400">
+            50K+
+          </h2>
+          <p className="mt-2 text-lg text-gray-400">
+            Students
+          </p>
         </div>
 
         <div>
-          <h2 className="text-3xl font-bold text-violet-400">10K+</h2>
-          <p className="text-slate-400">Challenges</p>
+          <h2 className="text-5xl font-black text-violet-400">
+            10K+
+          </h2>
+          <p className="mt-2 text-lg text-gray-400">
+            Challenges
+          </p>
         </div>
 
         <div>
-          <h2 className="text-3xl font-bold text-pink-400">1M+</h2>
-          <p className="text-slate-400">XP Earned</p>
+          <h2 className="text-5xl font-black text-pink-400">
+            1M+
+          </h2>
+          <p className="mt-2 text-lg text-gray-400">
+            XP Earned
+          </p>
         </div>
 
       </div>
