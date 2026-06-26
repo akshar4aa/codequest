@@ -2,7 +2,7 @@ import { ChevronRight } from "lucide-react";
 
 function HeroContent() {
   return (
-    <div className="w-full max-w-[620px] lg:ml-16 xl:ml-24 text-white">
+    <div className="w-full max-w-155 lg:ml-16 xl:ml-24 text-white">
 
       {/* Badge */}
       <div className="mb-15">
@@ -25,7 +25,7 @@ function HeroContent() {
       </h1> <br></br>
 
       {/* Description */}
-      <p className="mt-10 max-w-[500px] text-lg leading-9 text-slate-400">
+      <p className="mt-14 max-w-[500px] text-lg leading-9 text-slate-400">
 
         Learn programming through quests,
         AI mentors, boss battles and real-world projects.
