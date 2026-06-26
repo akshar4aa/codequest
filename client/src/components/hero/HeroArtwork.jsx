@@ -1,27 +1,10 @@
 function HeroArtwork() {
   return (
-    <div className="hidden lg:flex w-[58%] justify-center items-center">
+    <div className="relative hidden h-[780px] w-[700px] lg:flex items-center justify-center">
 
-      <div className="relative h-[650px] w-[650px]">
+      <div className="absolute h-[650px] w-[650px] rounded-full bg-violet-500/20 blur-[180px]" />
 
-        {/* Main Glow */}
-        <div className="absolute inset-0 rounded-full bg-violet-600/20 blur-[150px]" />
-
-        {/* Main Circle */}
-        <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-500/30 bg-white/5 backdrop-blur-xl" />
-
-        {/* Placeholder */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-
-          <div className="text-8xl">⚔️</div>
-
-          <h2 className="mt-6 text-3xl font-bold text-white">
-
-            Hero Illustration
-
-          </h2>
-
-        </div>
+      <div className="relative h-[620px] w-[620px] rounded-[40px] border border-white/10 bg-[#0f172a]/40 backdrop-blur-xl">
 
       </div>
 

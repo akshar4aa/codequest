@@ -4,13 +4,21 @@ import HeroArtwork from "./HeroArtwork";
 
 function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#09090B]">
+    <section className="relative min-h-screen overflow-hidden bg-[#050816]">
       <HeroBackground />
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1450px] items-center justify-between px-8 lg:px-20">
-        <HeroContent />
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1700px] items-center px-8 pt-36 pb-24 sm:px-12 lg:px-20 xl:px-28">
 
-        <HeroArtwork />
+        {/* Left Side */}
+        <div className="flex w-1/2 justify-center">
+          <HeroContent />
+        </div>
+
+        {/* Right Side */}
+        <div className="flex w-1/2 justify-center">
+          <HeroArtwork />
+        </div>
+
       </div>
     </section>
   );

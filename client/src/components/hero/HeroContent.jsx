@@ -2,96 +2,95 @@ import { ChevronRight } from "lucide-react";
 
 function HeroContent() {
   return (
-    <div className="w-full lg:w-[48%] text-white">
+    <div className="w-full max-w-[620px] lg:ml-16 xl:ml-24 text-white">
 
-      {/* Big Tag */}
-      <div className="inline-flex items-center rounded-full border border-violet-500/30 bg-violet-500/10 px-5 py-2 mb-10">
-  <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">
-    YOUR ADVENTURE STARTS HERE
-  </p>
-</div>
-
-      {/* Main Heading */}
-      <h1 className="text-5xl  sm:text-6xl font-black leading-[0.95] tracking-tight">
-
-        Become the
-
-        <br />
-
-        <span className="bg-linear-to-r from-cyan-400 via-violet-400 to-pink-400 bg-clip-text text-transparent">
-          Hero
+      {/* Badge */}
+      <div className="mb-15">
+        <span className="inline-flex rounded-full border border-violet-500/20 bg-violet-500/10 px-7 py-3 text-lg font-semibold uppercase tracking-[0.35em] text-violet-300 backdrop-blur-xl">
+          YOUR ADVENTURE STARTS HERE
         </span>
+      </div> <br></br>
 
-        {" "}of Your
+      {/* Heading */}
+      <h1 className="text-7xl font-black leading-[0.92] tracking-[-3px] lg:text-[92px]">
 
-        <br />
-
-        Coding Adventure
-
-      </h1>
-
-      {/* Subtitle */}
-      <p className="mt-10 max-w-lg text-lg leading-8 text-gray-400">
-
-        Learn programming through immersive quests, exciting boss battles,
-        achievements and AI-powered guidance.
+        Level Up
 
         <br />
 
-        Level up with every lesson and unlock your dream career.
+        <span className="bg-gradient-to-r from-cyan-400 via-violet-400 to-pink-500 bg-clip-text text-transparent">
+          Your Coding.
+        </span> 
 
-      </p>
+      </h1> <br></br>
+
+      {/* Description */}
+      <p className="mt-10 max-w-[500px] text-lg leading-9 text-slate-400">
+
+        Learn programming through quests,
+        AI mentors, boss battles and real-world projects.
+
+      </p> <br></br>
 
       {/* Buttons */}
-      <div className="mt-14 flex items-center gap-8">
+<div className="mt-16 flex flex-wrap gap-8">
 
-        <button className="rounded-2xl bg-gradient-to-r from-violet-600 via-fuchsia-500 to-cyan-500 px-12 py-5 text-lg font-semibold shadow-[0_20px_60px_rgba(124,58,237,0.35)] transition-all duration-300 hover:-translate-y-1 hover:scale-105">
+  <button
+    className="
+      group
+      flex items-center justify-center
+      rounded-2xl
+      bg-gradient-to-r
+      from-violet-600
+      via-fuchsia-500
+      to-cyan-500
+      px-12
+      py-6
+      min-w-[250px]
+      text-xl
+      font-bold
+      text-white
+      shadow-[0_25px_80px_rgba(139,92,246,0.45)]
+      transition-all
+      duration-300
+      hover:-translate-y-1
+      hover:scale-105
+      hover:shadow-[0_30px_90px_rgba(139,92,246,0.6)]
+    "
+  >
+    Begin Adventure
 
-          Start Quest
+    <ChevronRight
+      size={24}
+      className="ml-3 transition-transform duration-300 group-hover:translate-x-1"
+    />
+  </button>
 
-          <ChevronRight className="ml-3 inline" size={22} />
+  <button
+    className="
+      flex items-center justify-center
+      rounded-2xl
+      border
+      border-white/15
+      bg-white/5
+      px-12
+      py-6
+      min-w-[250px]
+      text-xl
+      font-semibold
+      text-white
+      backdrop-blur-xl
+      transition-all
+      duration-300
+      hover:border-violet-500
+      hover:bg-white/10
+      hover:-translate-y-1
+    "
+  >
+    Explore World
+  </button>
 
-        </button>
-
-        <button className="rounded-2xl border border-white/20 bg-white/5 px-12 py-5 text-lg font-semibold backdrop-blur-xl transition-all duration-300 hover:border-violet-500 hover:bg-white/10">
-
-          Explore Roadmap
-
-        </button>
-
-      </div>
-
-      {/* Stats */}
-      <div className="mt-20 flex gap-20">
-
-        <div>
-          <h2 className="text-5xl font-black text-cyan-400">
-            50K+
-          </h2>
-          <p className="mt-2 text-lg text-gray-400">
-            Students
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-5xl font-black text-violet-400">
-            10K+
-          </h2>
-          <p className="mt-2 text-lg text-gray-400">
-            Challenges
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-5xl font-black text-pink-400">
-            1M+
-          </h2>
-          <p className="mt-2 text-lg text-gray-400">
-            XP Earned
-          </p>
-        </div>
-
-      </div>
+</div>
 
     </div>
   );
