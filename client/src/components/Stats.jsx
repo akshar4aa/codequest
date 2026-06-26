@@ -1,9 +1,9 @@
-function CareerJourney() {
+function Stats() {
   return (
     <section className="min-h-screen flex items-center justify-center">
-      <h1>CareerJourney Section</h1>
+      <h1>Stats Section</h1>
     </section>
   );
 }
 
-export default CareerJourney;
+export default Stats;
